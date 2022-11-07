@@ -9,7 +9,7 @@ const assert = chai.assert;    // Using Assert style
 const expect = chai.expect;    // Using Expect style
 const should = chai.should();  // Using Should style
 
-const {uno, zero} = require('../js/index');
+const {uno, zero, saludar} = require('../js/index');
 
 describe('Banco de pruebas unitarias', () => {
     describe('Caso de pruebas 1', () => {
@@ -29,7 +29,7 @@ describe('Banco de pruebas unitarias', () => {
     });
     describe('Caso de pruebas 3', () => {
         it('saludar()', () => {
-            assert.isString();
+            assert.isString(saludar(), "Saludar");
         });
     });
 });
