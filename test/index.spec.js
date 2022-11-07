@@ -32,7 +32,7 @@ describe('Banco de pruebas unitarias', () => {
             assert.isString(saludar(), "Saludar");
         });
 
-        it('saludar() es una cadena', () => {
+        it('saludar() == Hola mundo', () => {
             assert.equal(saludar(), "Hola mundo");
         });
     });
