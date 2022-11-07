@@ -28,8 +28,12 @@ describe('Banco de pruebas unitarias', () => {
         });
     });
     describe('Caso de pruebas 3', () => {
-        it('saludar()', () => {
+        it('saludar() es una cadena', () => {
             assert.isString(saludar(), "Saludar");
+        });
+
+        it('saludar() es una cadena', () => {
+            assert.equal(saludar(), "Hola mundo");
         });
     });
 });
